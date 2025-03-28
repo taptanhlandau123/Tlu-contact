@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AddActivity"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/include_toolbar" />
+
+    <!-- Form Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:clipToOutline="true"
+        android:backgroundTint="@color/white">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            style="@style/CustomEditText" />
+
+        <!-- Phone -->
+        <TextView
+            android:id="@+id/txt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            style="@style/CustomEditText" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            style="@style/CustomEditText" />
+
+        <!-- Unit -->
+        <TextView
+            android:id="@+id/txt_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khoa"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/edt_unit"
+            style="@style/CustomEditText" />
+
+        <!-- Position -->
+        <TextView
+            android:id="@+id/txt_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chức vụ"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/edt_position"
+            style="@style/CustomEditText" />
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/edt_address"
+            style="@style/CustomEditText" />
+
+    </LinearLayout>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/RED"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Lưu"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+</LinearLayout>
